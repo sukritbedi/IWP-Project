@@ -168,7 +168,8 @@ nav ul
 #paytm{
   height: 116px;
 }
-hr {
+
+.front1 hr {
   height: 2px;
   width: 60px;
   background: #71bd46;
