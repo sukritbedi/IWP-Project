@@ -100,12 +100,12 @@ nav ul
     color: white;
 }
 
-.front1 h2{
-  font-size: 30px;
+.front h2{
+  font-size: 25px;
   position: absolute;
   top: 40vh;
   left: 60vw;
-  width: 35vw;
+  width: 36vw;
   text-align: center;
   text-transform: unset;
   color: white;
@@ -114,8 +114,8 @@ nav ul
 .button
 {
     position: absolute;
-    top: 50vh;
-    left: 70vw;
+    top: 54vh;
+    left: 69vw;
 }
 
 .btn
@@ -140,4 +140,27 @@ nav ul
 .btn:hover
 {
     background-color: darkorange;
+}
+
+.front1
+{
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+.front1 h1
+{
+    padding: 250px;
+    text-align: center;
+    color: black;
+}
+
+.front1 img{
+  height: 145px;
+  width: auto;
+  padding: 0px 70px;
+}
+
+#paytm{
+  height: 120px;
 }

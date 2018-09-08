@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="ticketdada">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <link rel="stylesheet" href="master.css">
   <script src="angjs.js"></script>
@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>IWP Project | CSE J Component</title>
   </head>
-  <body>
+  <body ng-controller="mainConsole">
     <nav id="home">
   		<img src="img/ticketdada.png" class="logo"/>
   		<ul class="main-nav">
@@ -29,6 +29,24 @@
 						<a href="signin/signin.html" class="btn btn-one">Sign In</a>
 						<a href="signup/signup.html" class="btn btn-two">Sign up</a>
 					</div>
+		</div>
+
+    <div class="front1" id="about">
+				<h1>ABOUT US</h1>
+		</div>
+
+    <div class="front1" id="services">
+      <h1>SERVICES</h1>
+    </div>
+
+		<div class="front1" id="partner">
+				<img src="img/paytm.png" alt="PayTm" id="paytm">
+        <img src="img/bookmyshow.png" alt="Book My Show">
+        <img src="img/dolby-atmos.png" alt="Dolby Atmos">
+		</div>
+
+		<div class="front1" id="contact">
+				<h1>CONTACT US</h1>
 		</div>
 
   </body>
