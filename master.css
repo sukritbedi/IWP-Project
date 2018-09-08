@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+}
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 13vh;
+
+    transition: .3s;
+
+    background-color: white;      /*this is optional if you want a transparent bar remove this line*/
+}
+
+.logo
+{
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+    height: 55px;
+}
+
+nav.black
+{
+    height: 80px;
+    padding: 0 30px;
+
+    background-color: black;
+}
+
+nav ul
+{
+    display: flex;
+
+    list-style: none;
+
+    color: solid;
+}
+.main-nav
+{
+    float: right;
+
+    margin-top: 10px;
+
+    list-style: none;
+}
+.main-nav li
+{
+    display: block;
+
+    padding: 20px 0;
+}
+.main-nav li a
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    padding: 5px 20px;
+
+    text-decoration: none;
+
+    color: black;
+}
+.main-nav li a:hover
+{
+    border: 1px solid white;
+    background-color: #7597ce;
+    /*	border-radius: 8px;
+*/
+}
+
+.front
+{
+    height: 100vh;
+
+    background-color: none;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/background1.jpg);
+    background-position: center;
+    background-size: 1400px;
+}
+.front h1
+{
+    font-size: 40px;
+    position: absolute;
+    top: 30vh;
+    left: 60vw;
+    width: 35vw;
+    text-align: center;
+    text-transform: unset;
+    color: white;
+}
+
+.front1 h2{
+  font-size: 30px;
+  position: absolute;
+  top: 40vh;
+  left: 60vw;
+  width: 35vw;
+  text-align: center;
+  text-transform: unset;
+  color: white;
+}
+
+.button
+{
+    position: absolute;
+    top: 50vh;
+    left: 70vw;
+}
+
+.btn
+{
+    font-size: 13px;
+
+    margin-right: 25px;
+    padding: 10px 30px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-one, .btn-two
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover
+{
+    background-color: darkorange;
+}
