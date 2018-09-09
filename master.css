@@ -14,12 +14,9 @@ nav
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100vw;
     height: 13vh;
-
     transition: .3s;
-
     background-color: white;      /*this is optional if you want a transparent bar remove this line*/
 }
 
@@ -28,7 +25,6 @@ nav
     position: relative;
     top: 10px;
     left: 10px;
-
     height: 55px;
 }
 
@@ -36,41 +32,32 @@ nav.black
 {
     height: 80px;
     padding: 0 30px;
-
     background-color: black;
 }
 
 nav ul
 {
     display: flex;
-
     list-style: none;
-
     color: solid;
 }
 .main-nav
 {
     float: right;
-
     margin-top: 10px;
-
     list-style: none;
 }
 .main-nav li
 {
     display: block;
-
     padding: 20px 0;
 }
 .main-nav li a
 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-
     padding: 5px 20px;
-
     text-decoration: none;
-
     color: black;
 }
 .main-nav li a:hover
@@ -148,6 +135,7 @@ nav ul
 {
     width: 100%;
     padding: 30px;
+    padding-right: 0px;
 }
 .front1 h1
 {
@@ -159,7 +147,7 @@ nav ul
     line-height: 1;
 }
 
-.front1 img{
+#partner img{
   height: 140px;
   width: auto;
   padding: 0px 65px;
@@ -176,4 +164,20 @@ nav ul
   position: relative;
   border: 0;
   margin: 30px 0 0 0;
+}
+
+.imgcontainer{
+  float: left;
+  width: 20vw;
+}
+
+.text{
+  float: right;
+  width: 73vw;
+  margin: 20px;
+  margin-top: 5px;
+  margin-right: 0;
+  padding: 3px;
+  font-size: 15px;
+  line-height: 1.5em;
 }
