@@ -18,7 +18,7 @@
       $datacheck = 'Data Added';
     }
     else {
-      $datacheck = 'Data not added';
+      $datacheck = 'Data not added/ Data invalid';
     }
   }
 

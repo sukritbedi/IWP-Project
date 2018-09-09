@@ -1,10 +1,10 @@
 <?php
 
     $connect = mysqli_connect("localhost","root","","iwp");
-    $userid = test_input($_POST["userid"]);
+    $email = test_input($_POST["email"]);
     $pass = test_input($_POST["pass"]);
 
-    $sql="SELECT * from info WHERE username='$userid' AND pass='$pass'";
+    $sql="SELECT * from info WHERE emailid='$email' AND pass='$pass'";
     $result = mysqli_query($connect,$sql);
     $count = mysqli_num_rows($result);
 
