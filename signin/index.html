@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app="ticketdada">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<html lang="en" dir="ltr">
   <link rel="stylesheet" href="master.css">
-  <script src="angjs.js"></script>
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body ng-controller="mainConsole">
+  <body>
+    <form action="login.php" method="post">
+      <label for="userid">Username : </label>
+      <input type="text" name="userid" placeholder="Enter the username">
 
+      <label for="pass">Password : </label>
+      <input type="password" name="pass" placeholder="Enter the password">
+      <input type="submit" >
+    </form>
   </body>
 </html>
