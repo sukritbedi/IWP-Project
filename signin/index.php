@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <?php include 'login.php'; ?>
   <link rel="stylesheet" href="master.css">
   <head>
     <meta charset="utf-8">
@@ -13,13 +14,13 @@
       <img src="../img/img-01.png" alt="">
     </div>
     <div class="maincontainer">
-      <form action="login.php" method="post">
+      <form action="index.php" method="post">
         <label for="userid">Email : </label><br><br>
         <input type="text" name="email" placeholder=" Enter the email"><br><br><br>
 
         <label for="pass">Password : </label><br><br>
         <input type="password" name="pass" placeholder="Enter the password"><br><br><br>
-        <input type="submit" >
+        <input type="submit" name="submit" value="submit">
       </form>
     </div>
   </body>
