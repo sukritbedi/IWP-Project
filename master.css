@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    text-rendering: optimizeLegibility !important;
 }
 body
 {
@@ -41,6 +40,7 @@ nav ul
     list-style: none;
     color: solid;
 }
+
 .main-nav
 {
     float: right;
@@ -64,7 +64,6 @@ nav ul
 {
     border: 1px solid white;
     background-color: #7597ce;
-    /*	border-radius: 8px;
 */
 }
 
