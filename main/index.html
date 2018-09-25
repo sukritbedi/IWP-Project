@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>IWP Project | CSE3002 J Component</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="img/filmroll.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/filmroll.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <link rel="stylesheet" href="master.css">
@@ -11,12 +11,19 @@
   </head>
   <body ng-app="myApp" ng-controller="main">
     <div class="sidebar col-lg-3 col-md-3">
-    1211
+      1211
     </div>
-    <div class="maincontainer col-lg-9 col-md-9">
-      <div class="mov_container" ng-repeat="movie in movies">
-        <h2>{{movie.mov_name}}</h2>
-        <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+    <div class="maincontainer col-lg-custom-movcont col-md-8">
+      <div ng-repeat="movie in movies">
+        <div class="mov_container  col-lg-custom-mov col-md-3" >
+          <div class="mov-poster">
+            <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+          </div>
+          <h4>{{movie.mov_name}}</h4>
+        </div>
+        <div class="over-item">
+
+        </div>
       </div>
     </div>
   </body>
