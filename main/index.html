@@ -16,13 +16,26 @@
     <div class="maincontainer col-lg-custom-movcont col-md-8">
       <div ng-repeat="movie in movies">
         <div class="mov_container  col-lg-custom-mov col-md-3" >
-          <div class="mov-poster">
-            <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+          <div class="thumbnail">
+            <div class="mov-poster">
+              <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+            </div>
+            <h4>{{movie.mov_name}}</h4>
+            <div class="over item3">
+              <img src="../img/cfrottentomatoes.png" alt="Rotten Tomatoes"><br>
+              <div>{{movie.rt_rat}}%</div>
+            </div>
+            <div class="over item4">
+              <img src="../img/imdb.png" alt="IMDB"><br>
+              <div>{{movie.imdb_rat}}/10</div>
+            </div>
+            <div class="over item1">
+              <div>{{movie.age_rat | age}}</div>
+            </div>
+            <div class="over item2">
+              <div class="text">Book Tickets</div>
+            </div>
           </div>
-          <h4>{{movie.mov_name}}</h4>
-        </div>
-        <div class="over-item">
-
         </div>
       </div>
     </div>

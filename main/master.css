@@ -5,6 +5,7 @@
 @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-custom-mov, .col-lg-custom-movcont {
         float: left;
+        position: relative;
     }
     .col-lg-1 {
         width: 8.33%;
@@ -147,13 +148,23 @@
   margin: 30px 63px;
 }
 
+.thumbnail{
+  background: transparent;
+  border: 0;
+  display: block;
+  text-align:center;
+}
+
+
+
 .mov-poster>img{
+  transition: 0.5s ease;
   height: 250px;
   width: 184px;
   border-radius: 9px;
 }
 
-.mov_container>h4{
+.thumbnail>h4{
   text-align: center;
   font-size: 16px;
   margin: 10px auto;
@@ -164,5 +175,64 @@
   transform: scale(1.4);
 }
 .mov_container:hover .mov-poster>img{
+  transition: 0.4s ease;
   border-radius: 0;
+  filter: blur(2px) grayscale(80%);
+}
+
+.over{
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mov_container:hover .over{
+  transition: 0.4s ease;
+  opacity: 1;
+}
+
+.item1{
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  color: white;
+}
+
+.item2{
+  top: 85%;
+  left: 50%;
+}
+
+.item3{
+  top: 15%;
+  left: 20%;
+  font-size: 20px;
+  color: white;
+}
+
+.item4{
+  top: 15%;
+  left: 80%;
+  font-size: 20px;
+  color: white;
+}
+
+.item3>img, .item4>img{
+  width: 65px;
+  height: auto;
+}
+
+.mov-poster{
+  display:inline-block;
+  transition: 0.5s ease;
+}
+
+.text {
+  background-color: #004080;
+  color: white;
+  width: 150px;
+  font-size: 20px;
+  padding: 10px 5px;
 }
