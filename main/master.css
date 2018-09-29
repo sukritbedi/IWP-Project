@@ -193,33 +193,33 @@
   opacity: 1;
 }
 
-.item1{
+.age-rating{
   top: 50%;
   left: 50%;
   font-size: 35px;
   color: white;
 }
 
-.item2{
+.booking{
   top: 85%;
   left: 50%;
 }
 
-.item3{
+.rt{
   top: 15%;
   left: 20%;
   font-size: 20px;
   color: white;
 }
 
-.item4{
+.imdb{
   top: 15%;
   left: 80%;
   font-size: 20px;
   color: white;
 }
 
-.item3>img, .item4>img{
+.rt>img, .imdb>img{
   width: 65px;
   height: auto;
 }

@@ -1,0 +1,31 @@
+<div ng-controller="movie_all" ng-show="main">
+  <div class="sidebar col-lg-3 col-md-3">
+    1211
+  </div>
+  <div class="maincontainer col-lg-custom-movcont col-md-8">
+    <div ng-repeat="movie in movies">
+      <div class="mov_container  col-lg-custom-mov col-md-3" >
+        <div class="thumbnail">
+          <div class="mov-poster">
+            <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+          </div>
+          <h4>{{movie.mov_name}}</h4>
+          <div class="over rt">
+            <img src="../img/cfrottentomatoes.png" alt="Rotten Tomatoes"><br>
+            <div>{{movie.rt_rat}}%</div>
+          </div>
+          <div class="over imdb">
+            <img src="../img/imdb.png" alt="IMDB"><br>
+            <div>{{movie.imdb_rat}}/10</div>
+          </div>
+          <div class="over age-rating">
+            <div>{{movie.age_rat | age}}</div>
+          </div>
+          <div class="over booking">
+            <div class="text" ng-click=moviebook1(movie.mov_id)>Book Tickets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
