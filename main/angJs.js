@@ -25,11 +25,20 @@ var app = angular.module("myApp",[]);
             $scope.moviebook1 = function(mov_id) {
               $rootScope.main = false;
               $rootScope.moviesel = true;
-              $rootScope.mov_id = mov_id;
+
+              $http({
+  							method:'post',
+  							url:'movie_select.php',
+  							data: {'mov_id':mov_id}
+  						})
+              .then(function(response) {
+                $rootScope.movie_selected = response.data;
+                console.log($rootScope.movie_selected);
+              })
+
             }
           })
 
           app.controller("movie_sel", function($scope, $rootScope, $http) {
 
-          })
-          ;
+          });

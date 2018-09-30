@@ -236,3 +236,34 @@
   font-size: 20px;
   padding: 10px 5px;
 }
+
+.mov-sel>img{
+  float: left;
+  width: 250px;
+  height: auto;
+  border: 5px solid #fceeb5;
+  border-radius: 10px;
+  box-shadow: 15px 15px 8px #aaaaaa;
+}
+.mov-sel{
+  width: 450px;
+
+}
+.mov-sel-det1{
+  float: right;
+  margin: 10px;
+}
+
+.mov-sel-det1>h1{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mov-sel-det1>h3{
+  font-size: 20px;
+}
+
+#mov-sel-age{
+  text-decoration: none;
+}

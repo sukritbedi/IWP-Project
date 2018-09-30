@@ -1,3 +1,13 @@
 <div ng-controller="movie_sel" ng-show="moviesel">
-  
+  <div ng-repeat="movie in movie_selected" class="mov-sel">
+    <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+    <div class="mov-sel-det1">
+      <h1>{{movie.mov_name}}</h1> &nbsp; <div id="mov-sel-age"> {{movie.age_rat | age}}</div>
+      <h3>
+      {{movie.runtime}}<br>
+      {{movie.imdb_rat}}<br>
+      {{movie.rt_rat}}<br>
+    </h3>
+    </div>
+  </div>
 </div>
