@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"  ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>IWP Project | CSE3002 J Component</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/filmroll.png">
+
+    <script src="../angular.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" src="angJs.js"></script>
   </head>
   <body>
-    <h1>Logged in as Admin</h1>
+    <div class="col-lg-2 adminview" ng-controller="sidebar">
+      <div class="sidepanel" ng-click="addMov">Add Movie</div>
+      <div class="sidepanel" ng-click="updateMov">Update Movie</div>
+      <div class="sidepanel" ng-click="viewTrans">View Transactions</div>
+    </div>
+    <div class="col-lg-10">
+      123
+    </div>
   </body>
 </html>

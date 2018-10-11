@@ -35,7 +35,6 @@ var app = angular.module("myApp",[]);
                 $rootScope.movie_selected = response.data;
                 console.log($rootScope.movie_selected);
               })
-
             }
           })
 
