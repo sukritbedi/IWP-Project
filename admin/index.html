@@ -11,9 +11,10 @@
   </head>
   <body>
     <div class="col-lg-2 adminview" ng-controller="sidebar">
-      <div class="sidepanel" ng-click="addMov">Add Movie</div>
-      <div class="sidepanel" ng-click="updateMov">Update Movie</div>
-      <div class="sidepanel" ng-click="viewTrans">View Transactions</div>
+      <div class="sidepanel" ng-click="addMov()">Add Movie</div>
+      <div class="sidepanel" ng-click="updateMov()">Update Movie</div>
+      <div class="sidepanel" ng-click="viewTrans()">View Transactions</div>
+      <div class="sidepanel" ng-click="viewUsers()">View Users</div>
     </div>
     <div class="col-lg-9 itempanel">
       <div class="" ng-show = "amov"><!-- For the Adding of movie -->
@@ -24,6 +25,9 @@
       </div>
       <div ng-show = "trans"><!-- For adding the Transactions checking -->
         <div ng-include="'transactions.html'"></div>
+      </div>
+      <div ng-show = "user"><!-- For viewing user and changing the type of user -->
+
       </div>
     </div>
   </body>
