@@ -148,3 +148,45 @@
 .sidepanel:nth-child(even){
   background-color: #ffa31a;
 }
+
+h1,h4{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.itempanel{
+  margin: 3%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+label{
+  text-align: right;
+  height: 30px;
+  border: 20px 0;
+  font-size: 20px;
+  border-bottom: 20px;
+}
+input, select{
+  width: 375px;
+  height: 30px;
+  border-radius: 5px;
+  border: black 1px solid;
+  margin-bottom: 31px;
+}
+
+#amovie{
+  height: 85%;
+}
+
+ul{
+  margin-left: 70px;
+}

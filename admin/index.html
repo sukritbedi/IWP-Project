@@ -15,8 +15,16 @@
       <div class="sidepanel" ng-click="updateMov">Update Movie</div>
       <div class="sidepanel" ng-click="viewTrans">View Transactions</div>
     </div>
-    <div class="col-lg-10">
-      123
+    <div class="col-lg-9 itempanel">
+      <div class="" ng-show = "amov"><!-- For the Adding of movie -->
+        <div ng-include="'amovie.html'"></div>
+      </div>
+      <div ng-show = "umov"><!-- For the Updading and Deleting of movie -->
+
+      </div>
+      <div ng-show = "trans"><!-- For adding the Transactions checking -->
+        <div ng-include="'transactions.html'"></div>
+      </div>
     </div>
   </body>
 </html>

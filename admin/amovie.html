@@ -1,0 +1,27 @@
+<div ng-controller="amovie" id="amovie">
+  <h1>Add Movie</h1>
+  <div class="col-lg-3">
+    <label for="mname">Movie Name</label><br><br><br>
+    <label for="rtime">Runtime</label><br><br><br>
+    <label for="imdb">IMDB Rating</label><br><br><br>
+    <label for="rt">Rotten Tomato Rating</label><br><br><br>
+    <label for="age">Age Rating</label><br><br><br>
+  </div>
+  <div class="col-lg-5">
+    <input type="text" name="mname">
+    <input type="text" name="rtime">
+    <input type="text" name="imdb">
+    <input type="text" name="rt">
+    <select name="age">
+      <option value="0">U</option>
+      <option value="2">U/A</option>
+      <option value="1">A</option>
+    </select>
+  </div>
+  <div class="col-lg-4">
+    <h4>List of added movies</h4>
+    <ul>
+      <li ng-repeat="mov in movs">{{mov.mov_name}}</li>
+    </ul>
+  </div>
+</div>
