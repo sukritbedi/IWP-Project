@@ -1,5 +1,18 @@
 var app = angular.module("myApp",[]);
 
+app.filter("age", function(){
+    return function (goit){
+        switch(goit){
+            case "0":
+              return "U";
+            case "1":
+              return "A";
+            case "2":
+              return "U/A"
+        }
+    }
+})
+
 app.controller("sidebar", function($scope,$rootScope){
   $rootScope.amov = true;
   $rootScope.umov = false;
@@ -34,13 +47,25 @@ app.controller("sidebar", function($scope,$rootScope){
 app.controller("amovie", function($scope, $http, $rootScope) {
   $http.get('fetchMovie.php')
   .then(function(response) {
-    $scope.movs = response.data;
+    $rootScope.movs = response.data;
     console.log($scope.movs);
   })
 })
 
+app.controller("umovie", function($scope, $http, $rootScope) {
+
+})
+
 app.controller("transactions", function($scope,$http,$rootScope){
   $http.get('fetchTrans.php')
+  .then(function(response) {
+    $scope.transactions = response.data;
+    console.log($scope.transactions);
+  })
+})
+
+app.controller("userdata", function($scope,$http,$rootScope){
+  $http.get('userAll.php')
   .then(function(response) {
     $scope.transactions = response.data;
     console.log($scope.transactions);

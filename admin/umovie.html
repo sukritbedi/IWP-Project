@@ -1,0 +1,21 @@
+<div ng-controller="umovie">
+  <h1>Update Movies</h1>
+  <table>
+    <thead>
+      <th>Movie Name</th>
+      <th>Runtime</th>
+      <th>IMDB</th>
+      <th>Rotten Tomato</th>
+      <th>Age Rating</th>
+      <th></th>
+    </thead>
+    <tr ng-repeat="mov in movs">
+      <td>{{mov.mov_name}}</td>
+      <td>{{mov.runtime}}</td>
+      <td>{{mov.imdb_rat}}</td>
+      <td>{{mov.rt_rat}}</td>
+      <td>{{mov.age_rat | age}}</td>
+      <td><input type="submit" value="Update" class="umovie" ng-click=umov()></td>
+    </tr>
+  </table>
+</div>

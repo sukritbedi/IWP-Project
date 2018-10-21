@@ -132,9 +132,12 @@
         width: 100%;
     }
 }
-
+.adminview{
+  position: fixed;
+  z-index: 1;
+}
 .sidepanel{
-  padding: 24.5% 0;
+  padding: 24.9% 0;
   border: 1px solid black;
   margin: 10px 0;
   text-align: center;
@@ -156,6 +159,7 @@ h1,h4{
 
 .itempanel{
   margin: 3%;
+  margin-left: 24.5%;
 }
 
 table {
