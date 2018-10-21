@@ -64,7 +64,21 @@ app.controller("amovie", function($scope, $http, $rootScope) {
 })
 
 app.controller("umovie", function($scope, $http, $rootScope) {
+  $scope.update=true;
+  $scope.umov = function(id,name,runtime,imdb,rt,age,desc) {
+    $scope.update = false;
+    $scope.id = id;
+    $scope.name = name;
+    $scope.runtime = runtime;
+    $scope.imdb = imdb;
+    $scope.rt = rt;
+    $scope.desc = desc;
+    $scope.age = age;
+  }
 
+  $scope.back = function() {
+    $scope.update=true;
+  }
 })
 
 app.controller("transactions", function($scope,$http,$rootScope){
@@ -81,4 +95,20 @@ app.controller("userdata", function($scope,$http,$rootScope){
     $scope.users = response.data;
     console.log($scope.users);
   })
+
+  $scope.update=true;
+
+  $scope.useru = function(id, name, phnum, email, pass, type) {
+    $scope.id = id;
+    $scope.name = name;
+    $scope.email = email;
+    $scope.phnum = phnum;
+    $scope.pass = pass;
+    $scope.type = type;
+    $scope.update=false;
+  }
+
+  $scope.back = function() {
+    $scope.update=true;
+  }
 });
