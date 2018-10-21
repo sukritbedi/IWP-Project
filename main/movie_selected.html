@@ -16,7 +16,15 @@
       <h4>Venues</h4>
       <hr style="background-color:#6495ED;"><br><br>
       <div class="mov-sel-cinema">Sri Vishnu Cinemas: Vellore</div>
+      <div class="timeview" ng-repeat="sch1 in sch1s">
+        <input type="button" class="b123" value="{{sch1.time}}" ng-click="bookticket(movie.mov_id,sch1.time,'1')">
+      </div><br><br><br><br>
+
       <div class="mov-sel-cinema">PVR: Velocity, Silk Mill, Gandhi Nagar</div>
+      <div class="timeview" ng-repeat="sch1 in sch1s">
+        <input type="button" class="b123" value="{{sch1.time}}" ng-click="bookticket(movie.mov_id,sch1.time,'2')">
+      </div>
+
     </div>
   </div>
 </div>

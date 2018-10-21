@@ -315,3 +315,26 @@ h5{
 #desc{
   width: 50vw;
 }
+
+.timeview{
+  float: left;
+}
+
+.b123{
+  width: 90px;
+  height: 40px;
+  border-radius: 4px;
+  color: black;
+  background-color: #00f200;
+  border: 1px black solid;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.b123:hover{
+  background-color: turquoise;
+}
+
+.b123:active{
+  background-color: grey;
+}

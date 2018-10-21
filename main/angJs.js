@@ -39,5 +39,29 @@ var app = angular.module("myApp",[]);
           })
 
           app.controller("movie_sel", function($scope, $rootScope, $http) {
+            $http.get('fetchSch1.php')
+            .then(function(response) {
+              $scope.sch1s = response.data;
+              console.log($scope.sch1s);
+            })
+            $http.get('fetchSch2.php')
+            .then(function(response) {
+              $scope.sch2s = response.data;
+              console.log($scope.sch2s);
+            })
 
+            $scope.bookticket = function(movid, time, loc) {
+              $scope.movid = movid;
+              $scope.time = time;
+              $scope.loc = loc;
+              $scope.timest = new Date();
+              $http({
+                method:'post',
+                url:'dotransaction.php',
+                data: {'movid':$scope.movid,'time':$scope.time,'loc':$scope.loc}
+              })
+              .success(function(data) {
+                console.log(data);
+              })
+            }
           });

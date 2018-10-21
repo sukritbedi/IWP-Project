@@ -5,12 +5,14 @@
       <th>Transaction ID</th>
       <th>Username</th>
       <th>Movie Name</th>
+      <th>Cinema</th>
       <th>Timestamp</th>
     </thead>
     <tr ng-repeat = "tran in transactions">
       <td>{{tran.tran_id}}</td>
       <td>{{tran.cus_name}}</td>
       <td>{{tran.mov_name}}</td>
+      <td>{{tran.cinema}}</td>
       <td>{{tran.timest}}</td>
     </tr>
   </table>
