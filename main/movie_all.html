@@ -1,9 +1,16 @@
 <div ng-controller="movie_all" ng-show="main">
   <div class="sidebar col-lg-3 col-md-3">
-    1211
+    <div class="agefilter">
+      <h2>Age Rating</h2>
+      <input type="radio" name="agerating" value="0" ng-model="searchMov.age_rat">U<br>
+      <input type="radio" name="agerating" value="1" ng-model="searchMov.age_rat">A<br>
+      <input type="radio" name="agerating" value="2" ng-model="searchMov.age_rat">U/A<br>
+      <input type="radio" name="agerating" value="" ng-model="searchMov.age_rat">None of these<br>
+    </div>
+    <hr style="background-color:#6495ED;" class="side"><br><br>
   </div>
   <div class="maincontainer col-lg-custom-movcont col-md-8">
-    <div ng-repeat="movie in movies">
+    <div ng-repeat="movie in movies | filter: searchMov">
       <div class="mov_container  col-lg-custom-mov col-md-3" >
         <div class="thumbnail">
           <div class="mov-poster">
