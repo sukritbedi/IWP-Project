@@ -138,4 +138,20 @@ app.controller("userdata", function($scope,$http,$rootScope){
   $scope.back = function() {
     $scope.update=true;
   }
+
+  $scope.userupdate = function() {
+    $http({
+      method:'post',
+      url:'upuser.php',
+      data: {'id':$scope.id,'phone':$scope.phnum,'name':$scope.name,'email':$scope.email,'pass':$scope.pass,'type':$scope.type}
+    })
+    .success(function(data) {
+      alert(data);
+      $http.get('userAll.php')
+      .then(function(response) {
+        $scope.users = response.data;
+        console.log($scope.users);
+      })
+    })
+  }
 });
