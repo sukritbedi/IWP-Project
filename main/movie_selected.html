@@ -1,6 +1,7 @@
 <div ng-controller="movie_sel" ng-show="moviesel">
   <div ng-repeat="movie in movie_selected" class="mov-sel">
     <img src="../img/movie_banners/{{movie.imgsrc}}" alt="{{movie.mov_name}}">
+    <input type="button" class="b123" value="Go Back" ng-click=back()>
     <div class="mov-sel-det1">
       <h1>{{movie.mov_name}} ({{movie.age_rat | age}})</h1>
       <div id="mov-sel-age"> </div>

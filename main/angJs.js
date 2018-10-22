@@ -50,6 +50,11 @@ var app = angular.module("myApp",[]);
               console.log($scope.sch2s);
             })
 
+            $scope.back = function() {
+              $rootScope.main = true;
+              $rootScope.moviesel = false;
+            }
+
             $scope.bookticket = function(movid, time, loc) {
               $scope.movid = movid;
               $scope.time = time;
@@ -62,6 +67,7 @@ var app = angular.module("myApp",[]);
               })
               .success(function(data) {
                 console.log(data);
+                alert(data);
               })
             }
           });

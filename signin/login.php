@@ -13,13 +13,13 @@
       if($count == 1) {
         if ($value[0]=="1") {
           session_start();
-          $_SESSION["user_id"] = $userid;
+          $_SESSION["user_id"] = $email;
 
           header('Location: ../admin/index.html');
         }
         else {
           session_start();
-          $_SESSION["user_id"] = $userid;
+          $_SESSION["user_id"] = $email;
 
           header('Location: ../main/index.html');
         }

@@ -24,6 +24,17 @@ app.filter("usertype", function(){
     }
 })
 
+app.filter("cinema", function(){
+    return function (goit){
+        switch(goit){
+            case "1":
+              return "Sri Vishnu Cinema";
+            case "2":
+              return "PVR: Velocity, Silk Mill";
+        }
+    }
+})
+
 app.controller("sidebar", function($scope,$rootScope){
   $rootScope.amov = true;
   $rootScope.umov = false;
@@ -78,6 +89,22 @@ app.controller("umovie", function($scope, $http, $rootScope) {
 
   $scope.back = function() {
     $scope.update=true;
+  }
+
+  $scope.updatemovie = function() {
+    $http({
+      method:'post',
+      url:'upmov.php',
+      data: {'movid':$scope.id,'name':$scope.name,'runtime':$scope.runtime,'imdb':$scope.imdb,'rt':$scope.rt,'desc':$scope.desc,'age':$scope.age}
+    })
+    .success(function(data) {
+      alert(data);
+      $http.get('fetchMovie.php')
+      .then(function(response) {
+        $rootScope.movs = response.data;
+        console.log($scope.movs);
+      })
+    })
   }
 })
 
