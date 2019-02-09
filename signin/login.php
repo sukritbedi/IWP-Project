@@ -3,7 +3,7 @@
     $connect = mysqli_connect("localhost","root","","iwp");
     if(isset($_POST["submit"])&& $_SERVER["REQUEST_METHOD"]=="POST") {
       $email = test_input($_POST["email"]);
-      $pass = test_input($_POST["pass"]);
+      $pass = md5(test_input($_POST["pass"]));
 
       $sql="SELECT type from info WHERE emailid='$email' AND pass='$pass'";
       $result = mysqli_query($connect,$sql);

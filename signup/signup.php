@@ -6,7 +6,7 @@
     $pnum = test_input($_POST["pnum"]);
     $emailid = test_input($_POST["email"]);
     $name = test_input($_POST["name"]);
-    $pass = test_input($_POST["pass"]);
+    $pass = md5(test_input($_POST["pass"]));
 
     $connect = mysqli_connect("localhost","root","","iwp");
     $sql="INSERT INTO info(name,phonenum,emailid,pass) VALUES ('$name',$pnum,'$emailid','$pass')";
